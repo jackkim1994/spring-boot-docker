@@ -14,6 +14,7 @@ jobs:
             - name: Check code
               uses: actions/checkout@v4
             - name: Set up Docker Image
-              run:  --build-arg MAVEN_IMAGE=maven:3.9-eclipse-temurin-21 \
+              run:  docker build \
+                  --build-arg MAVEN_IMAGE=maven:3.9-eclipse-temurin-21 \
                   --build-arg JRE_IMAGE=eclipse-temurin:21-jre \
                   -t spring-boot-app-image:latest .

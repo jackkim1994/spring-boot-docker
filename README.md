@@ -1,1 +1,2 @@
-Just a sample hello world application using Java/Spring Boot
+# spring-boot-docker
+Docker CI/CD Sandbox
